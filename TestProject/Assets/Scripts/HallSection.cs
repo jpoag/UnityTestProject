@@ -7,6 +7,7 @@ namespace Gameplay
     public class HallSection : MonoBehaviour
     {
         public Magnet[] magnets;
+        public Waypoint[] waypoints;
 
         // Use this for initialization
         void Start()
