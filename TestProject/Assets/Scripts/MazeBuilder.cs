@@ -4,12 +4,10 @@ using UnityEngine;
 
 namespace Gameplay
 {
-    [System.Serializable]
-    public class HallSection : MonoBehaviour
+    public class MazeBuilder : MonoBehaviour
     {
-        public Magnet[] magnets;
-        public Waypoint[] waypoints;
-
+        public HallSection[] path; // need to start with 'seed'
+        public HallSection[] sections; // split into {'straight', 'turn', 'junction', 'reward', 'punish', 'death'}
         // Use this for initialization
         void Start()
         {
@@ -23,3 +21,4 @@ namespace Gameplay
         }
     }
 }
+
