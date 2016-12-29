@@ -19,11 +19,11 @@ namespace Gameplay
         {
             if (Input.GetKeyUp(KeyCode.Q))
             {
-
+                mMazeBuilder.AddSection();
             }
             else if (Input.GetKeyUp(KeyCode.E))
             {
-
+                mMazeBuilder.RemoveSection();
             }
         }
     }
